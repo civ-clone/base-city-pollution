@@ -1,0 +1,41 @@
+{
+  "name": "@civ-clone/base-city-pollution",
+  "version": "0.1.0",
+  "description": "City pollution as data: the shape of a city's pollution, its divisor, the advances that raise it and the roll that pollutes a square.",
+  "repository": "git@github.com:civ-clone/base-city-pollution.git",
+  "keywords": [
+    "typescript",
+    "civilization"
+  ],
+  "author": "dom111 <dom111@users.noreply.github.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "npm run ts:compile && npm run prettier:format",
+    "prettier:check": "prettier --config .prettierrc --check '**/*.ts'",
+    "prettier:format": "prettier --config .prettierrc '**/*.ts' --write",
+    "test": "ts-mocha ./tests/*.test.ts",
+    "ts:compile": "tsc --build tsconfig.json"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.0.0",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^16.0.0",
+    "chai": "^4.0.0",
+    "mocha": "^10.0.0",
+    "prettier": "^2.8.8",
+    "ts-mocha": "^10.0.0",
+    "typescript": "^4.0.0"
+  },
+  "dependencies": {
+    "@civ-clone/core-city": "^0.1.23",
+    "@civ-clone/core-city-growth": "^0.1.6",
+    "@civ-clone/core-city-improvement": "^0.1.7",
+    "@civ-clone/core-engine": "^0.1.6",
+    "@civ-clone/core-rule": "^0.1.6",
+    "@civ-clone/core-science": "^0.1.7",
+    "@civ-clone/core-tile-improvement": "^0.1.6",
+    "@civ-clone/core-world": "^0.1.22",
+    "@civ-clone/core-yield": "^0.1.6"
+  }
+}
